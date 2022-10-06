@@ -1,0 +1,153 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Berlin Sans FB';
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7ef, #9b59b6);
+}
+
+.container{
+    max-width: 700px;    
+    width: 100%;
+    margin-bottom: 80px;
+    background:#ccc3c3;
+    padding: 25px 30px;
+    border-radius:5px;
+}
+.container .title{
+    font-size: 40px;
+    font-weight: 500;
+    position: relative; 
+}
+    .container .title::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;        
+        height: 3px;
+        width: 66%;
+        background: linear-gradient(135deg, #71b7ef, #9b59b6);
+    }
+.container form .scouts-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px 0 12px 0;
+    }
+form .scouts-info .input-box {
+    margin-bottom:15px;
+    width : calc(100% / 2 - 20px);
+}
+.scouts-info .input-box .info {
+    display:block;
+    font-weight:300;   
+    margin-bottom:5px;   
+}
+
+.scouts-info .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+    .scouts-info .input-box input:focus,
+    .scouts-info .input-box input:valid {
+        border-color: #9b59b6;
+}
+
+form .button {
+    height: 35px;
+    margin-left: 460px;
+}
+    form .button input {
+        height: 100%;
+        width: 130%;
+        outline: none;
+        color: #fff;
+        border: none;
+        font-size: 13px;
+        font-weight: 400;
+        border-radius: 7px;
+        background: linear-gradient(135deg, #71b7ef, #9b59b6);
+        letter-spacing: 1px;
+    }
+        form .button input:hover {
+        background: linear-gradient(-135deg, #71b7ef, #9b59b6);
+        color: #ff4646;
+        }
+input[type="file"]{
+    display: none;
+}
+label {
+    color: black;
+    height: 20px;
+    width: 80px;
+    background: white;
+    border-radius: 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Berlin Sans FB';
+    
+}
+
+    label:hover {
+        background: linear-gradient(-135deg, #71b7ef, #9b59b6);
+        color: #ff4646;
+    }
+
+#display_image {
+    width: 132px;
+    height: 170px;
+    margin-right:400px;
+    margin-top:25px;
+    margin-bottom:0px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+}
+/*#display_image .image-info {
+        color: black;
+        display: flex;
+        font-size: 11px;
+        justify-content: center;
+        margin-top: 75px;
+        font-family: 'Lucida Calligraphy';
+    }*/
+
+@media (max-width: 584px) {
+        .container {
+        max-width: 100%;
+    }
+}
+form .scouts-info .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.container form .scouts-info {
+    max-height: 500px;
+    overflow-y:scroll;
+}
+
+.scouts-info::-webkit-scrollbar {
+    margin:0;
+}
