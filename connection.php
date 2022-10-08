@@ -5,6 +5,7 @@
 	$lastname = filter_input(INPUT_POST,'lastname');
 	$age = filter_input(INPUT_POST,'age');
 	$birthday = filter_input(INPUT_POST,'birthday');
+	$school = filter_input(INPUT_POST,'school');
 	$address = filter_input(INPUT_POST,'address');
 	$cellno = filter_input(INPUT_POST,'cellno');
 	$outfitno = filter_input(INPUT_POST,'outfitno');
@@ -22,8 +23,8 @@
 			.mysqli_connect_error());
 	}
 	else{
-		$sql = "INSERT INTO zandidapScouts(idno, firstname,middlename,lastname,age,birthday,address,cellno,outfitno,currentrank,outfitadvisor)
-		values = ('$idno','$firstname','$middlename','$lastname',,'$age','$birthday','$address','$cellno','$outfitno','$currentrank','$outfitadvisor')";
+		$sql = "INSERT INTO zandidapScouts(idno, firstname,middlename,lastname,age,birthday,school,address,cellno,outfitno,currentrank,outfitadvisor)
+		values = ('$idno','$firstname','$middlename','$lastname',,'$age','$birthday', 'school','$address','$cellno','$outfitno','$currentrank','$outfitadvisor')";
 	if($conn->query($sql)){
 		echo "New Scout is added successfully!";
 	}
