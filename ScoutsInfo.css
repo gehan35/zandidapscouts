@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(135deg, #71b7ef, #9b59b6);
+    background: linear-gradient(135deg, #0000FF, #FF0000);
 }
 
 .container{
@@ -31,10 +31,10 @@ body {
         content: '';
         position: absolute;
         left: 0;
-        bottom: 0;        
+        bottom: 0;
         height: 3px;
         width: 66%;
-        background: linear-gradient(135deg, #71b7ef, #9b59b6);
+        background: linear-gradient(135deg, #0000FF, #FF0000);
     }
 .container form .scouts-info {
         display: flex;
@@ -81,59 +81,30 @@ form .button {
         font-size: 13px;
         font-weight: 400;
         border-radius: 7px;
-        background: linear-gradient(135deg, #71b7ef, #9b59b6);
+        background: linear-gradient(135deg, #0000FF, #FF0000);
         letter-spacing: 1px;
     }
         form .button input:hover {
-        background: linear-gradient(-135deg, #71b7ef, #9b59b6);
-        color: #ff4646;
+            background: linear-gradient(-135deg, #0000FF, #FF0000);
+            color: #ff4646;
         }
-input[type="file"]{
-    display: none;
-}
-label {
-    color: black;
-    height: 20px;
-    width: 80px;
-    background: white;
+
+
+select {
+    height: 45px;
+    width: 207%;
+    outline: none;
     border-radius: 5px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 11px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Berlin Sans FB';
-    
+    border: 1px solid #fff;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+    margin-bottom: 15px;   
 }
 
-    label:hover {
-        background: linear-gradient(-135deg, #71b7ef, #9b59b6);
-        color: #ff4646;
-    }
-
-#display_image {
-    width: 132px;
-    height: 170px;
-    margin-right:400px;
-    margin-top:25px;
-    margin-bottom:0px;
-    border: 1px solid black;
-    background-position: center;
-    background-size: cover;
-}
-/*#display_image .image-info {
-        color: black;
-        display: flex;
-        font-size: 11px;
-        justify-content: center;
-        margin-top: 75px;
-        font-family: 'Lucida Calligraphy';
-    }*/
-
-@media (max-width: 584px) {
+    @media (max-width: 584px) {
         .container {
         max-width: 100%;
     }

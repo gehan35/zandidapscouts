@@ -12,79 +12,77 @@
             <div class="scouts-info">
                 <div class="input-box">
                     <span class=" info"> Membership ID No</span>
-                    <input type="text" placeholder="Enter your Membership ID No" required>
+                    <input type="text" id ="memIDno" name="memIDno" placeholder="Enter your Membership ID No" required>
                 </div>
 
                 <div class="input-box">
                     <span class=" info"> First Name</span>
-                    <input type="text" placeholder="Enter your First Name" required>
+                    <input type="text" id ="firstname" name="firstname" placeholder="Enter your First Name" required>
                 </div>
 
                 <div class="input-box">
                     <span class=" info"> Middle Name</span>
-                    <input type="text" placeholder="Enter your Middle Name" required>
+                    <input type="text" id ="middlename" name="middlename" placeholder="Enter your Middle Name" required>
                 </div>
 
                 <div class="input-box">
                     <span class=" info"> Last Name</span>
-                    <input type="text" placeholder="Enter your Last Name" required>
+                    <input type="text" id ="lastname" name="lastname" placeholder="Enter your Last Name" required>
                 </div>
 
                 <div class="input-box">
                     <span class=" info"> Age</span>
-                    <input type="text" placeholder="Enter your Age" required>
+                    <input type="text" id ="age" name="age" placeholder="Enter your Age" required>
                 </div>
 
                 <div class="input-box">
                     <span class=" info"> Birthday</span>
-                    <input type="text" placeholder="Enter your Birthday" required>
+                    <input type="text" id ="birthday" name="birthday" placeholder="Enter your Birthday" required>
                 </div>
 
                 <div class="input-box">
                     <span class="info"> Address</span>
-                    <input type="text" placeholder="Enter your Address" required>
-                </div>
-
-                <div class="input-box">
-                    <span class=" info">School</span>
-                    <input type="text" placeholder="Enter your School" required>
-                </div>
+                    <input type="text" id ="address" name="address" placeholder="Enter your Address" required>
+                </div>           
 
                 <div class="input-box">
                     <span class=" info"> Cellphone No.</span>
-                    <input type="text" placeholder="Enter your Cellphone No" required>
+                    <input type="text" id ="cellno" name="cellno" placeholder="Enter your Cellphone No" required>
                 </div>
 
                 <div class="input-box">
                     <span class=" info"> Outfit No.</span>
-                    <input type="text" placeholder="Enter your Outfit No" required>
+                    <input type="text" id ="outfitno" name="outfitno" placeholder="Enter your Outfit No" required>
                 </div>
 
-                <div class="input-box">
-                    <span class=" info"> Current Rank</span>
-                    <input type="text" placeholder="Enter your Current Rank" required>
+                <div class="select">
+                    <span class="info"> Current Rank</span>
+                    <select name="rank-list" id="rank-list">
+                        <option selected disabled>Choose your current rank</option>
+                        <option value="txt">Membership Scout</option>
+                        <option value="txt">Tenderfoot Scout</option>
+                        <option value="txt">Second Class Scout</option>
+                        <option value="txt">First Class Scout</option>
+                        <option value="txt">Explorer Scout</option>
+                        <option value="txt">Pathfinder Scout</option>
+                        <option value="txt">Outdoorsman Scout</option>
+                        <option value="txt">Seaman Scout</option>
+                        <option value="txt">Airman Scout</option>
+                        <option value="txt">Venturer Scout</option>
+                        <option value="txt">Eagle Scout</option>
+                    </select>
                 </div>
 
                 <div class="input-box">
                     <span class="info"> Outvit Advisor</span>
-                    <input type="text" placeholder="Enter your Outfit Advisor" required>
+                    <input type="text" id ="outfitadvisor" name="outfitadvisor" placeholder="Enter your Outfit Advisor" required>
                 </div>
-
-                <input type="file" id="image_input" accept="image/png, image/jpg, image/jpeg">
-                <label for="image_input">
-                    Choose a Photo
-                </label>
-
-                <div id="display_image">
-                <span class="image-info">Passport size photo</span>
-                </div>
-                <script src="ScoutsInfo.js"></script>
+                      
 
                 <div class="button">
                     <input type="submit" value="Submit Information">
                 </div>
-
-            </div>           
+            </div>             
         </form>     
     </div>    
 
